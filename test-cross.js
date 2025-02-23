@@ -6,7 +6,7 @@ async function saucedemoLoginTest() {
 
   for (let browser of browsers){
     // Membuat koneksi dengan webdriver
-    let driver = await new Builder().forBrowser("chrome").build();
+    let driver = await new Builder().forBrowser(browser).build();
 
     // Exception Handling & Conclusion
     try {
@@ -36,7 +36,7 @@ async function saucedemoLoginTest() {
     // Validasi item berhasil ditambahkan ke keranjang
     const cartBadge = await driver.findElement(By.className("shopping_cart_badge")).getText();
     assert.strictEqual(cartBadge, "1", 'Item was not added to the cart');
-    
+
     console.log("Testing Success! with browser " + browser);
 
     await driver.sleep(2000);  // menunggu 2 detik sebelum menutup browser
