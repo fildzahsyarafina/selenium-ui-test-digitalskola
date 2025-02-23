@@ -1,0 +1,21 @@
+{
+    "baseUrl": "https://saucedemo.com",
+    "validUser": {
+        "username": "standard_user",
+        "password": "secret_sauce"
+    },
+    "invalidUser": {
+        "username": "standard_user",
+        "password": "password"
+    },
+    "message": {
+        "expectedloginError" : "Username and password do not match",
+        "loginError" : "Error Message do not match"
+    },
+    "assertTitle" : "Swag Labs",
+    "titleError" : "'Title does not include 'Swag Labs'",
+    "log": {
+        "LoginSuccess": "Testing Login Success!",
+        "LoginFailed": "Testing Login Failed = Success!"
+    }
+}
